@@ -1,0 +1,13 @@
+<div class="row">
+    <div *ngFor="let gif of resultadoapi" class="col-md4 col-sm-6 animate__bounceIn">
+        <div class="card">
+            <!-- Aqui es donde voy a colocar la imagen a renderizar -->
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
